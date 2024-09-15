@@ -4,17 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro-Administração</title>
-           <h1 style="color:#D9A25F; font-family:Merriweather;">Livraria Atenas</h1>
-        <img src="1000040730-removebg-preview.png" alt="Logo da Livraria Atenas"
-        width="100"height="100">
+    
+<link rel="stylesheet" href="style.css">
+
   </head>
   <body style="background-color:#F5F0E1">
-        <nav class="menu">
-        <ul>
-            <li><a href="Pagina_incial.html">Início</a></li>
-            <li><a href="Cadastrarobjeto.html">Cadastrar Livros</a></li>
-        </ul>
+             <div>   
+    <h1 style="color:#D9A25F; font-family:Merriweather;">Livraria Atenas</h1>
+        <img src="1000040730-removebg-preview.png" alt="Logo da Livraria Atenas"
+        width="100"height="100">
+
+        <nav>
+            <input type="checkbox" id="toque-menu" hidden>
+            
+  <label class="botao-imagem" for="toque-menu">
+    <img src="https://i.im.ge/2024/09/15/fpFHqP.1000043290.png" alt="Imagem do botão menu" width="50" height="50">
+            </label>
+
+            <div class="menu-links">
+                <ul class="menu-link">
+        
+      <a href="Pagina_incial.html">
+    <img src="https://i.im.ge/2024/09/12/fkRDU1.1000042997.png" alt=" home ou pagina incial" width="80"height="80"
+    </a>
+    
+        <a href="Cadastrarobjeto.html">
+    <img src="https://i.im.ge/2024/09/12/fkR9OT.1000043003.png" alt=" home ou pagina incial" width="80"height="80">
+    <a/>
+    
+        <a href="Cadastrar.html"><img src="https://i.im.ge/2024/09/12/fkRI3f.1000042999.png" alt="Cadastrar Usuario" width="80"height="80">
+    </a>
+  
+      </ul>
+      
     </nav>
+    </div>
+    </div>
     <main>
       <h2>Bem-vindo a área de administração</h2>
     <h2>Cadastro do Usuário</h2>
@@ -22,22 +47,21 @@
       <label for="usuario"> Usuário:</label>
       <input type="usuario" id="usuario"
       name="Usuário" required>
-      <br>
+      <br><br>
       <label for="nome">Nome Completo: </label>
       <input type="text" id="nome" name="Nome Completo" required>
-      <br>
+      <br><br>
       <label for="email">E-mail:</label>
       <input type="text" id="email" name=E-mail required>
-      <br>
+      <br><br>
       <label for="senha"> Senha:</label>
       <input type="password" id="senha" name="Senha" required>
-      <br>
+      <br><br>
       <label for="data">Data de Nacimento</label>
       <input type="date" id="data" name="Data de Nacimento" required>
                    <br>
-                   <br>
-             <b>Tipo de Usuario</b>
-             <br/>
+                   <br><br>
+             <p>Tipo de Usuario</p>
              <input type="radio" name="Avaliaçao" required/>Usuário Comum
              <br/>
              <input type="radio" name="Avaliaçao"/ required>Adiministrador
@@ -79,9 +103,13 @@
 </tr>
 </table>
     </main>
-        <footer>
+    <br><br>
+    <footer>
         <p>Desenvolvido por [Tainá Oliveira Lima]</p>
-        <a href="autora.html">Sobre a Autora</a>
+        <p>@2024 Livraria Atenas</p>
+                   <a href="autora.html">
+              <img src="https://i.im.ge/2024/09/12/fkRL4m.1000043002.png" alt="sobre a autora do site" width="80" height="80"/>
+            </a>
     </footer>
   </body>
-</html>
+    </html>
