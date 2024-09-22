@@ -1,0 +1,141 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  margin:0;
+  background-color:#E9F0F5;
+  font-family: Arial, sans-serif;
+ padding: 0;
+}
+.nav-menu{
+  font-family: 'Merriweather', sans-serif;
+  height: 100px;
+  display:flex;
+  flex-flow:row wrop;
+  justify-content: space-between;
+  align-items:center ;
+  background-color: #264653;
+  
+}
+.logo{
+  font-family: 'Merriweather', sans-serif;
+  flex: 20%;
+  color:#A9CAD8;
+  text-align:center;
+  font-size: 23px;
+  margin-left: 10%;
+}
+.menu-links{
+  flex:70%;
+  text-align:right;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+ display: flex;
+align-items: center;
+}
+.menu-links a{
+  text-decoration:none;
+  font-size:20px;
+  padding 20px,16px;
+}
+.menu-links li {
+    margin-right: 20px;
+}
+
+.botao-imagem {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #F0F4F8;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .menu-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .botao-imagem {
+        display: block;
+        cursor: pointer;
+    }
+    #toque-menu:checked ~ .menu-links {
+        display: flex;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .menu-links {
+        display: flex;
+    }
+
+    .botao-imagem {
+        display: none;
+    }
+}
+.pagina{
+  display:flex;
+  height:600px;
+  
+}
+.headerline{
+  margin-left:10%;
+  display:flex;
+  flex:40%
+  justify-content:center;
+  align-items:center;
+}
+.img{
+  margin-right:10%;
+  flex:40%;
+  text-align:center;
+}
+.img h2{
+  font-family: 'Merriweather', sans-serif; color:#264653;
+  font-size:20px;
+  padding: 0;
+}
+.img h3{
+  font-family: 'Merriweather', sans-serif; color:#264653;
+  font-size:20px;
+}
+.fim{
+text-align:center;
+ background-color: #264653;
+ font-family: 'Merriweather', sans-serif;  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+}
+
+.colecao {
+    padding: 20px;
+}
+
+.livros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.livro {
+    border: 1px solid #264653;
+    padding: 10px;
+    text-align: center;
+    background-color:#F0F4F8;
+}
+
+button a {
+    text-decoration: none;
+    color:#A9CAD8;
+}
