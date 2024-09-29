@@ -7,8 +7,8 @@ body {
   font-size:100%;
 }
 
-div {
-  background-color: #4B2E1E;
+.cabeçalho{
+  background-color:#4B2E1E;
   font-family: 'Merriweather', sans-serif;
   padding: 0px;
   margin: 0 15px;
@@ -56,15 +56,29 @@ button:hover {
   background-color: #556B2F;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
 
-footer {
+ footer{
   background-color: #4B2E1E;
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Merriweather', sans-serif; 
+  margin-top:100px;
   color: #FFFFFF;
   padding: 10px;
-  text-align: center;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   width: 100%;
+  text-align: center;
+  left: 0;
 }
 
 .Cadastrar {
@@ -98,4 +112,228 @@ footer {
 
 .menu-link a {
     display: block;
+}
+@media print {
+    nav {
+        display: none;
+    }
+}
+livros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding:20px;
+    
+}
+
+.livro {
+    border: 1px solid #8B8E4E;
+    padding: 10px;
+    text-align: center;
+    background-color:#f4decf;
+    
+    
+}
+
+button a {
+    text-decoration: none;
+    color:#8B8E4E;
+}
+body {
+  font-size: 18px;
+  margin: 0;
+}
+
+
+
+body {
+  font-size: 16px;
+}
+
+/* Celulares - Telas pequenas */
+@media (max-width: 450px) {
+  body {
+    font-size: 14px;
+    padding: 5px;
+    line-height: 1.6;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 2rem; 
+    margin: 10px 0;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin: 8px 0;
+  }
+  p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  nav {
+    display: block;
+    margin: 5px 0;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #4B2E1E;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+/* Tablets - Telas médias */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 1.8;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin: 15px 0;
+  }
+  h2 {
+    font-size: 2rem;
+    margin: 12px 0;
+  }
+  p {
+    margin: 12px 0;
+    font-size: 1.1rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #4B2E1E;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+/* Telas grandes - Desktops */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+    line-height: 2;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin: 18px 0;
+  }
+  p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  footer {
+    padding: 20px 0;
+    font-size: 1rem;
+    position: fixed;
+  }
+}
+
+/* Orientação horizontal */
+@media (orientation: landscape) {
+  body {
+    font-size: 15px;
+    padding: 10px;
+    line-height: 1.7;
+  }
+  img {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin: 12px 0;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+  p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+  }
+  footer {
+    padding: 12px 0;
+    font-size: 0.9rem;
+    position: fixed;
+  }
+}
+
+/* Telas grandes - Monitores Ultra Wide */
+@media (min-width: 1440px) {
+  body {
+    font-size: 20px;
+    padding: 30px;
+    line-height: 2.2;
+  }
+  img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 3.5rem;
+    margin: 25px 0;
+  }
+  h2 {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+  p {
+    margin: 18px 0;
+    font-size: 1.4rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #4B2E1E;
+    color: #fff;
+    text-align: center;
+  }
 }
